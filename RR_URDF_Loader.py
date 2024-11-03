@@ -197,6 +197,13 @@ def log_trimesh(entity_path: str, mesh: trimesh.Trimesh) -> None:
         timeless=True,
     )
 
+def pil_image_to_albedo_texture(image: Image.Image) -> np.ndarray:
+    """Convert a PIL image to an albedo texture."""
+    albedo_texture = np.asarray(image)
+    if albedo_texture.ndim == 2:
+        albedo_texture = np.stack([albedo_texture] * 3, axis=-1)
+    return albedo_texture
+    
 #-------------------
 
 def resolve_path(path_str: str) -> str: #All URDF and stl files must be in "vis" folder
@@ -211,7 +218,6 @@ def resolve_path(path_str: str) -> str: #All URDF and stl files must be in "vis"
         return str(Path(path_str).resolve())
 
 #-------------------
-
 
 #NEXT REMOVE ALL COMMAND LINE ARGUMENTS AND REPLACE DEPENDENT LOGIC WITH DIRECT VALUES LIKE PATH PREFIX
 
