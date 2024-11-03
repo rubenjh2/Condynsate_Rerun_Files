@@ -1,0 +1,8 @@
+numpy
+rerun-sdk>=0.16.0
+scipy
+trimesh
+pillow
+lxml # dependency for urdf_parser_py
+pyyaml # dependency for urdf_parser_py
+urdfdom-py @ git+https://github.com/ros/urdf_parser_py.git@ros2
