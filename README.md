@@ -9,8 +9,16 @@ conda install -c conda-forge rerun-sdk
 ```
 
 Confirm Rerun installation:
-- type "rerun" in command line, if viewer opens then installation was successful
+```bash
+rerun
+```
+If the Rerun viewer opens, it was successfully installed
+
 
 Download URDF Loader:
-- git clone https://github.com/rubenjh2/Condynsate_Rerun_Files
-- pip install -r requirements.txt
+```bash
+git clone https://github.com/rubenjh2/Condynsate_Rerun_Files
+```
+```bash
+pip install -r requirements.txt
+```
