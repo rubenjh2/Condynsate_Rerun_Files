@@ -1,7 +1,7 @@
 **Installation:**
 In a new environment
 Install Rerun (either option): # Python must be >=3.12, <3.13 for all dependencies
-- pip install rerun-sdk
+- '''bash pip install rerun-sdk
 - conda install -c conda-forge rerun-sdk
 
 Confirm Rerun installation:
