@@ -1,4 +1,4 @@
-**Installation:**
+**Installation:**  
 In a new environment
 Install Rerun:  
 Use either command (Python must be >=3.12, <3.13 for all dependencies)
