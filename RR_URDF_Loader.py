@@ -219,8 +219,6 @@ def resolve_path(path_str: str) -> str: #All URDF and stl files must be in "vis"
 
 #-------------------
 
-#NEXT REMOVE ALL COMMAND LINE ARGUMENTS AND REPLACE DEPENDENT LOGIC WITH DIRECT VALUES LIKE PATH PREFIX
-
 def main() -> None:
     # The Rerun Viewer will always pass these two pieces of information:
     # 1. The path to be loaded, as a positional arg.
